@@ -1,4 +1,3 @@
-
 import { Users, Video, Calendar, MessageSquare } from 'lucide-react';
 import { WorkoutPlan } from './WorkoutPlan';
 import { 
@@ -61,7 +60,7 @@ export function Features() {
           </dl>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div id="workout-plans" className="mt-16 grid gap-8 md:grid-cols-3">
           <WorkoutPlan strategy={new BeginnerWorkoutStrategy()} />
           <WorkoutPlan strategy={new IntermediateWorkoutStrategy()} />
           <WorkoutPlan strategy={new AdvancedWorkoutStrategy()} />
